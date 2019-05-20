@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12638" started-at="2019-05-20T03:35:17Z" finished-at="2019-05-20T03:35:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12638" started-at="2019-05-20T03:35:17Z" finished-at="2019-05-20T03:35:29Z">
+      <class name="testScripts.AM001">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testScripts.AM001@3891771e]" name="launchBrowser" is-config="true" duration-ms="5664" started-at="2019-05-20T03:35:17Z" finished-at="2019-05-20T03:35:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="AM001()[pri:0, instance:testScripts.AM001@3891771e]" name="AM001" duration-ms="6718" started-at="2019-05-20T03:35:22Z" finished-at="2019-05-20T03:35:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM001 -->
+        <test-method status="PASS" signature="closeBroswer()[pri:0, instance:testScripts.AM001@3891771e]" name="closeBroswer" is-config="true" duration-ms="233" started-at="2019-05-20T03:35:29Z" finished-at="2019-05-20T03:35:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBroswer -->
+      </class> <!-- testScripts.AM001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
