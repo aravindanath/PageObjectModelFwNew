@@ -2,6 +2,7 @@ package testScripts;
 
 import org.testng.annotations.Test;
 
+import pageRepo.HomePage;
 import pageRepo.LoginPage;
 
 public class AM001 extends BaseTest {
@@ -16,7 +17,10 @@ public class AM001 extends BaseTest {
 	public void AM001() throws InterruptedException {
 
 		LoginPage lp = new LoginPage(driver);
-		lp.login();
+		lp.login("AM_LG01");
+		
+		HomePage hp = new HomePage(driver);
+		hp.searchProduct("AM_SC_001");
 
 	}
 

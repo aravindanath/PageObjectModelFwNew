@@ -19,17 +19,17 @@ public class BaseTest {
 	@BeforeClass
 
 	public void launchBrowser() throws IOException {
-		if (JavaUtils.getVal("browser").equalsIgnoreCase("chrome")) {
+		if (JavaUtils.getPropertyOf("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 
-		} else if (JavaUtils.getVal("browser").equalsIgnoreCase("chrome")) {
+		} else if (JavaUtils.getPropertyOf("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 		
-		driver.get(JavaUtils.getVal("url"));
+		driver.get(JavaUtils.getPropertyOf("url"));
 	}
 
 	// @AfterSuite

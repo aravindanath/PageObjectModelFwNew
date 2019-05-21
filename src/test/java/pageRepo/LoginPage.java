@@ -1,10 +1,14 @@
 package pageRepo;
 
+import java.util.HashMap;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import utils.JavaUtils;
 
 public class LoginPage extends BasePage {
 	private WebDriver driver;
@@ -33,14 +37,20 @@ public class LoginPage extends BasePage {
 	@FindBy(id = "ap_password")
 	private WebElement passwordTxt;
 
+	
+	protected HashMap<String, String> lp;
 
-	public void login() {
+
+	public void login(String workflowid) {
+		
+		lp = JavaUtils.readExcelData("Login", workflowid);
 		
 
 		signin.click();
-		amazonEmail.sendKeys("automationclass2018@gmail.com");
+		amazonEmail.sendKeys(lp.get("USERNAME"));
 		continueBtn.click();
-		passwordTxt.sendKeys("auto2018",Keys.ENTER);
+		passwordTxt.sendKeys(lp.get("PASSWORD"),Keys.ENTER);
+		
 		
 		
 		
