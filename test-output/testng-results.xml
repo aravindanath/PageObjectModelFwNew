@@ -2,24 +2,43 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12638" started-at="2019-05-20T03:35:17Z" finished-at="2019-05-20T03:35:29Z">
+  <suite name="Suite" duration-ms="13970" started-at="2019-12-13T04:18:28Z" finished-at="2019-12-13T04:18:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12638" started-at="2019-05-20T03:35:17Z" finished-at="2019-05-20T03:35:29Z">
-      <class name="testScripts.AM001">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testScripts.AM001@3891771e]" name="launchBrowser" is-config="true" duration-ms="5664" started-at="2019-05-20T03:35:17Z" finished-at="2019-05-20T03:35:22Z">
+    <test name="Test" duration-ms="13970" started-at="2019-12-13T04:18:28Z" finished-at="2019-12-13T04:18:42Z">
+      <class name="testScripts.GB001">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:testScripts.GB001@396e2f39]" name="setExtent" is-config="true" duration-ms="1056" started-at="2019-12-13T04:18:28Z" finished-at="2019-12-13T04:18:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testScripts.GB001@396e2f39]" name="launchBrowser" is-config="true" duration-ms="9097" started-at="2019-12-13T04:18:29Z" finished-at="2019-12-13T04:18:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="AM001()[pri:0, instance:testScripts.AM001@3891771e]" name="AM001" duration-ms="6718" started-at="2019-05-20T03:35:22Z" finished-at="2019-05-20T03:35:29Z">
+        <test-method status="PASS" signature="gb001()[pri:0, instance:testScripts.GB001@396e2f39]" name="gb001" duration-ms="2781" started-at="2019-12-13T04:18:38Z" finished-at="2019-12-13T04:18:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AM001 -->
-        <test-method status="PASS" signature="closeBroswer()[pri:0, instance:testScripts.AM001@3891771e]" name="closeBroswer" is-config="true" duration-ms="233" started-at="2019-05-20T03:35:29Z" finished-at="2019-05-20T03:35:29Z">
+        </test-method> <!-- gb001 -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScripts.GB001@396e2f39]" name="tearDown" is-config="true" duration-ms="5" started-at="2019-12-13T04:18:41Z" finished-at="2019-12-13T04:18:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=gb001 status=SUCCESS method=GB001.gb001()[pri:0, instance:testScripts.GB001@396e2f39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="closeBroswer()[pri:0, instance:testScripts.GB001@396e2f39]" name="closeBroswer" is-config="true" duration-ms="201" started-at="2019-12-13T04:18:41Z" finished-at="2019-12-13T04:18:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBroswer -->
-      </class> <!-- testScripts.AM001 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testScripts.GB001@396e2f39]" name="endReport" is-config="true" duration-ms="797" started-at="2019-12-13T04:18:41Z" finished-at="2019-12-13T04:18:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- testScripts.GB001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

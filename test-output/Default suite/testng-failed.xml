@@ -5,9 +5,12 @@
     <classes>
       <class name="testScripts.AM001">
         <methods>
+          <include name="endReport"/>
           <include name="closeBroswer"/>
           <include name="AM001"/>
+          <include name="setExtent"/>
           <include name="launchBrowser"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- testScripts.AM001 -->
     </classes>

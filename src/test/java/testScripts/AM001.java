@@ -15,8 +15,10 @@ public class AM001 extends BaseTest {
 	 */
 	@Test
 	public void AM001() throws InterruptedException {
-
+		test = extent.createTest("AM001");
+		test.info("============Test started=============");
 		LoginPage lp = new LoginPage(driver);
+		test.info("============User is on Login page ===========");
 		lp.login("AM_LG01");
 		
 		HomePage hp = new HomePage(driver);

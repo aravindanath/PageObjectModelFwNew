@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import utils.JavaUtils;
 
@@ -38,6 +39,15 @@ public class LoginPage extends BasePage {
 	private WebElement passwordTxt;
 
 	
+	@FindBy(xpath="//input[@name='uid']")
+	private WebElement userID;
+	
+	@FindBy(xpath="//input[@name='password']")
+	private WebElement password;
+	
+	@FindBy(xpath="//input[@name='btnLogin']")
+	private WebElement loginBtn;
+	
 	protected HashMap<String, String> lp;
 
 
@@ -51,10 +61,18 @@ public class LoginPage extends BasePage {
 		continueBtn.click();
 		passwordTxt.sendKeys(lp.get("PASSWORD"),Keys.ENTER);
 		
+	}
+
+	public void loginGuruBank(String workflowid) {
+		lp = JavaUtils.readExcelData("Login", workflowid);
 		
+		Assert.assertEquals(driver.getTitle(),"Guru99 Bank Home Page","Mis match in title");
 		
+		userID.sendKeys(lp.get("USERNAME"));
+		
+		password.sendKeys(lp.get("PASSWORD"),Keys.ENTER);
 		
 		
 	}
-
+	
 }

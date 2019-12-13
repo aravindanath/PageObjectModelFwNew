@@ -37,9 +37,9 @@ public class HomePage  extends BasePage{
 	
 		search.sendKeys(hp.get("PRODUCT"),Keys.ENTER);
 		
-		Thread.sleep(2000);
-		raymond.click();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
+//		//raymond.click();
+//		Thread.sleep(2000);
 		
 		
 		
